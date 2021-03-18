@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghiceste butonul</title>
+    <title>Guess the button</title>
     <style>
         h1 {
             text-align: center;
@@ -42,23 +42,23 @@
     </style>
 </head>
 <body>
-    <h1>Ghiceste butonul!</h1>
-    <p>Apasa pe unul din butoane</p>
+    <h1>Guess the button!</h1>
+    <p>Press one of the buttons</p>
     <div>
         <button
             class="buton1"            
             onclick="randomButton()"
-            >Butonul 1
+            >Button 1
         </button>
         <button
             class="buton2"
             onclick="randomButton()"
-            >Butonul 2
+            >Button 2
         </button>
         <button
             class="buton3"
             onclick="randomButton()"
-            >Butonul 3
+            >Button 3
         </button>
     </div>
     <script>
@@ -70,10 +70,10 @@
             var x = randomNumber(1, 3);
             var y = randomNumber(1, 3);
             if (x == y) {
-                alert("Ai ghicit butonul!");
+                alert("You have guessed the button!");
             }
             else {
-                alert("Nu ai ghicit butonul!");
+                alert("You haven't guessed the button!");
             }
         }
     </script>
