@@ -56,12 +56,10 @@
       </button>
     </div>
     <script>
-      function randomNumber(min, max) {
-        var random = Math.floor(Math.random() * (max - min)) + min;
-        return random;
-      }
+      var winningButton = Math.floor(Math.random() * (3 - 1)) + 1;
+
       function randomButton(buttonId) {
-        if (randomNumber(1, 3) == buttonId) {
+        if (winningButton == buttonId) {
           alert("You have guessed the button");
         } else {
           alert("This is not the button");
